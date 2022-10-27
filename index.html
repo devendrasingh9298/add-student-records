@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align:center;
+        }
+        table{
+            text-align:center;
+            border: 1px solid red;
+        }
+        tr,td{
+            border: 1px solid greenyellow;
+        }
+    </style >
+</head>
+<body>
+   <script src="index.js" ></script>
+   <h2>Student Records</h2>
+
+   <label>Roll No :</label>
+   <input placeholder="Roll No" id="rollno" />
+<br><br>
+   <label>Name :</label>
+   <input placeholder="Name" id="name" />
+<br><br>
+    <label>Course :</label>
+    <input placeholder="Course" id="course" />
+<br><br>
+    <label>Address :</label>
+    <input placeholder="Address" id="address" />
+<br><br>
+    <label>Mobile No :</label>
+    <input placeholder="Mobile Number" id="mobileno" />
+
+<br><br>
+
+    <button id="addButton" onclick="insertItem()" >ADD RECORDS</button>
+<br><br>
+
+<table >
+    <tr>
+        <th>SR NO</th>
+        <th>Roll NO</th>
+        <th>Name </th>
+        <th>Course</th>
+        <th>Address</th>
+        <th>Mobile No</th>
+    </tr>
+    <tbody id="tbody"></tbody>
+</table>
+</body>
+</html>
